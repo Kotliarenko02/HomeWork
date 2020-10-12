@@ -6,7 +6,7 @@ namespace HomeWork
     {
         static void Main(string[] args)
         {
-            TASK8();
+            TASK10();
         }
         static void HomeWork()
         {
@@ -26,9 +26,9 @@ namespace HomeWork
         {
             int no1 = -1 + 4 * 6;
             int no2 = (35 + 5) % 7;
-            double no3 = 14 + (-4 * 6 )/ 11.0;
-            double no4 = 2 + 15 / 6.0 * 1 - 7 % 2;   
-            Console.WriteLine("{0} {1} {2} {3}",no1,no2,no3,no4);
+            double no3 = 14 + (-4 * 6) / 11.0;
+            double no4 = 2 + 15 / 6.0 * 1 - 7 % 2;
+            Console.WriteLine("{0} {1} {2} {3}", no1, no2, no3, no4);
 
         }
         static void TASK4()
@@ -51,7 +51,7 @@ namespace HomeWork
             int no3 = int.Parse(Console.ReadLine());
             int no4 = int.Parse(Console.ReadLine());
             double a = (no1 + no2 + no3 + no4) / 4.0;
-            Console.WriteLine(a);  
+            Console.WriteLine(a);
         }
         static void TASK7()
         {
@@ -68,11 +68,30 @@ namespace HomeWork
         }
         static void TASK8()
         {
-            DateTime no1 =  DateTime.Now;
+            DateTime no1 = DateTime.Now;
             Console.WriteLine(no1.ToString("dd/MM/yy"));
 
         }
+        static void TASK9()
+        {
+            Console.WriteLine("Please,tape your age;");
+            int a = int.Parse(Console.ReadLine());
+            int b = 2020 - a;
+            Console.WriteLine($"You were born in {b}");
+        }
+        static void TASK10()
+        {
+            Console.WriteLine("Please, tape the X");
+            int X = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please, tape the Y");
+            int Y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please, tape the Z");
+            int Z = int.Parse(Console.ReadLine());
+            Console.WriteLine($"(x+y)*z = {(X+Y) * Z }\nx*y+y*z={X*Y+Y*Z}");
+
+        }
     }
+
 }
        
     
